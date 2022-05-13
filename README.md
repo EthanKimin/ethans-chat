@@ -1,3 +1,3 @@
-# Ethan's Chat make
+# Making Ethan's Chat
 
-practice HTML and CSS
+practice HTML and CSS.
