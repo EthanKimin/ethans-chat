@@ -7,7 +7,7 @@
   padding: 15px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.settings-items:first-child .settings-item:nth-child(3) {
+.settings-list:first-child .settings-item:nth-child(3) {
   border-bottom: none;
 }
 .settings-item__column {
@@ -23,7 +23,7 @@
 .settings-item__subtitle {
   color: var(--gray);
 }
-.settings-items:first-child {
+.settings-list:first-child {
   padding-bottom: 20px;
   border-bottom: var(--main-border);
   margin-bottom: 20px;
