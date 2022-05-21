@@ -2,10 +2,28 @@
   background-color: tomato;
   width: 25px;
   height: 25px;
+  /* border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  color: white;
+  /* font-weight: 600; */
+}
+
+.attention-badge {
+  font-size: 13px;
+  color: tomato;
+  border: 2px solid tomato;
+  width: 13px;
+  height: 13px;
+  margin-left: 10px;
+}
+
+.badge,
+.attention-badge {
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   font-weight: 600;
 }
