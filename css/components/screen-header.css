@@ -12,3 +12,24 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+
+@keyframes rotateCog {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scale(1.5) rotateZ(0);
+  }
+  50% {
+    transform: scale(1.5) rotateZ(360deg);
+  }
+  75% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 3s ease-in-out infinite;
+}

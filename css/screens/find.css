@@ -86,5 +86,26 @@
   justify-content: space-between;
 }
 .open-post__heart-count span {
-  margin-left: 3px;
+  margin-left: 5px;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: none;
+  }
+}
+.open-post__photo .fa-heart {
+  transition: ease-in-out 1s;
+}
+
+.open-post__photo:hover .fa-heart {
+  color: tomato;
+  will-change: transform;
+  animation: heartBeat 1s ease-in-out infinite;
 }
