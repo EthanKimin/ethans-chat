@@ -1,6 +1,5 @@
 #chat-screen {
   background-color: #abc1d1;
-  /* height: 1100vh; */
 }
 #chat-screen .alt-screen-header,
 #chat-screen .status-bar {
@@ -98,28 +97,24 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
-  transition: transform 300ms ease-in-out;
 }
 .reply .reply__column:first-child {
-  width: 6%;
+  width: 7%;
 }
 .reply .reply__column:last-child {
-  width: 94%;
+  width: 93%;
   position: relative;
-  /* display: flex;
-  align-items: center; */
 }
 .reply i {
   opacity: 0.6;
 }
 .reply input {
-  padding: 3px 15px;
+  padding: 10px 15px;
   height: 30px;
   width: 100%;
   border: var(--main-border);
   border-radius: 18px;
   box-sizing: border-box;
-  transition: transform 300ms ease-in-out, width 300ms ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -128,8 +123,12 @@
   right: 0px;
   top: 0px;
 }
-.reply__column:last-child > i {
+.reply__column:last-child .fa-smile-wink {
   right: 40px;
+  top: 7px;
+}
+.reply__column:last-child .fa-hashtag {
+  right: 7px;
   top: 7px;
 }
 
@@ -141,29 +140,125 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
 }
 .reply__column button i {
   opacity: 1;
 }
-.reply__column button:focus,
-.reply__column button:active {
-  outline: none;
+
+.reply:focus-within button {
+  visibility: visible;
+  opacity: 1;
 }
 
-.reply .reply__column:first-child,
-.reply .fa-smile-wink,
-.reply button {
-  transition: opacity 300ms ease-in-out;
+@keyframes snowfallRegular {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(200vh);
+  }
 }
-.reply:focus-within .reply__column:first-child,
-.reply:focus-within .fa-smile-wink,
-.reply:focus-within button {
-  opacity: 0;
+@keyframes snowfallFast {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(400vh);
+  }
 }
-.reply input:focus {
-  width: 93vw;
-  transform: translateX(-7%) translateY(-60px);
+@keyframes snowfallSlow {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(110vh);
+  }
 }
-.reply:focus-within {
-  transform: translateY(60px);
+.snow-fall-screen__snow-flower {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 4px 2px #e5e5e5;
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+}
+.snow-fall-screen__snow-flower:nth-child(1) {
+  left: 5%;
+  animation: snowfallSlow 10s ease-in-out infinite;
+  animation-delay: 1000ms;
+}
+.snow-fall-screen__snow-flower:nth-child(2) {
+  left: 10%;
+  animation: snowfallRegular 10s ease-in-out infinite;
+  animation-delay: 2500ms;
+}
+.snow-fall-screen__snow-flower:nth-child(3) {
+  left: 17%;
+  animation: snowfallFast 10s ease-in-out infinite;
+  animation-delay: 3700ms;
+}
+.snow-fall-screen__snow-flower:nth-child(4) {
+  left: 93%;
+  animation: snowfallSlow 10s ease-in-out infinite;
+  animation-delay: 4500ms;
+}
+.snow-fall-screen__snow-flower:nth-child(5) {
+  left: 50%;
+  animation: snowfallRegular 10s ease-in-out infinite;
+  animation-delay: 5000ms;
+}
+.snow-fall-screen__snow-flower:nth-child(6) {
+  left: 25%;
+  animation: snowfallFast 10s ease-in-out infinite;
+  animation-delay: 6000ms;
+}
+.snow-fall-screen__snow-flower:nth-child(7) {
+  left: 77%;
+  animation: snowfallSlow 10s ease-in-out infinite;
+  animation-delay: 6300ms;
+}
+.snow-fall-screen__snow-flower:nth-child(8) {
+  left: 80%;
+  animation: snowfallRegular 10s ease-in-out infinite;
+  animation-delay: 7200ms;
+}
+.snow-fall-screen__snow-flower:nth-child(9) {
+  left: 44%;
+  animation: snowfallFast 10s ease-in-out infinite;
+  animation-delay: 7800ms;
+}
+.snow-fall-screen__snow-flower:nth-child(10) {
+  left: 98%;
+  animation: snowfallSlow 10s ease-in-out infinite;
+  animation-delay: 8000ms;
+}
+.snow-fall-screen__snow-flower:nth-child(11) {
+  left: 60%;
+  animation: snowfallRegular 10s ease-in-out infinite;
+  animation-delay: 8500ms;
+}
+.snow-fall-screen__snow-flower:nth-child(12) {
+  left: 37%;
+  animation: snowfallFast 10s ease-in-out infinite;
+  animation-delay: 8800ms;
+}
+.snow-fall-screen__snow-flower:nth-child(13) {
+  left: 56%;
+  animation: snowfallSlow 10s ease-in-out infinite;
+  animation-delay: 9000ms;
+}
+.snow-fall-screen__snow-flower:nth-child(14) {
+  left: 7%;
+  animation: snowfallRegular 10s ease-in-out infinite;
+  animation-delay: 9600ms;
+}
+.snow-fall-screen__snow-flower:nth-child(15) {
+  left: 72%;
+  animation: snowfallFast 10s ease-in-out infinite;
+  animation-delay: 10000ms;
 }
