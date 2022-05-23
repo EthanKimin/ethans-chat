@@ -4,10 +4,6 @@
 }
 #chat-screen .alt-screen-header,
 #chat-screen .status-bar {
-  position: fixed;
-  width: 100%;
-  box-sizing: border-box;
-  top: 0;
   background-color: var(--chat-page-color);
 }
 
