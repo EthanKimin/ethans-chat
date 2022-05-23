@@ -6,6 +6,7 @@
   align-items: center;
   font-size: 25px;
   font-weight: 600;
+  z-index: 2;
 }
 .alt-screen-header__column,
 .alt-screen-header__column {

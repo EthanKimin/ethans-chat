@@ -32,9 +32,12 @@ body {
 }
 body::-webkit-scrollbar {
   width: 6px;
+  height: 100%;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
-.main-screen::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   width: 6px;
-  color: rgba(0, 0, 0, 0.3);
-  border-radius: 2px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
 }

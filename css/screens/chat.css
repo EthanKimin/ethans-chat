@@ -1,5 +1,6 @@
 #chat-screen {
-  background-color: #abc1d1;
+  background-color: var(--chat-page-color);
+  height: 500vh;
 }
 #chat-screen .alt-screen-header,
 #chat-screen .status-bar {
@@ -7,7 +8,7 @@
   width: 100%;
   box-sizing: border-box;
   top: 0;
-  background-color: #abc1d1;
+  background-color: var(--chat-page-color);
 }
 
 @keyframes fadeIn {
@@ -22,16 +23,16 @@
 }
 
 .main-chat {
-  margin-top: 100px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 800ms linear;
+  animation: fadeIn 300ms linear;
 }
 
 .chat__timestamp {
   color: white;
-  background-color: #92a4b2;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 8px 20px;
   border-radius: 15px;
   font-size: 14px;
@@ -109,27 +110,28 @@
   opacity: 0.6;
 }
 .reply input {
-  padding: 10px 15px;
-  height: 30px;
+  padding: 5px 15px;
+  /* height: 30px; */
   width: 100%;
+  font-size: 18px;
   border: var(--main-border);
-  border-radius: 18px;
+  border-radius: 20px;
   box-sizing: border-box;
 }
 
 .reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 2px;
+  top: 1.5px;
 }
 .reply__column:last-child .fa-smile-wink {
   right: 40px;
-  top: 7px;
+  top: 8px;
 }
 .reply__column:last-child .fa-hashtag {
   right: 7px;
-  top: 7px;
+  top: 8px;
 }
 
 .reply__column button {
@@ -163,12 +165,13 @@
 }
 
 .snow-fall-screen__snow-flower {
+  will-change: transform;
   width: 5px;
   height: 5px;
   border-radius: 50%;
   background-color: white;
   box-shadow: 0px 0px 4px 2px #e5e5e5;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 10px;
 }
